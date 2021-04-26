@@ -10,17 +10,17 @@ body {
 
 /* THE NAVIGATION SECTION */
 
-img {
+.kokolet {
     width: 60px;
     height: 45px;
-    margin-top: 25px;
+    margin-left: 60px;
 }
 
 hr {
     width: 100%;
     color: red;
     border-style: solid;
-    border-width: 4px;
+    border-width: 5px;
 }
 
 nav {
@@ -35,6 +35,7 @@ nav {
 .nar-links {
     display: flex;
     list-style: none;
+    margin-right: 60px;
 }
 
 .nar-set a {
@@ -53,52 +54,19 @@ nav {
 
 /* THE IMAGE HOME PAGE */
 
-.slider-frame {
-    overflow: hidden;
-    height: 800px;
-    width: 1349px;
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-@-webkit-keyframes slide_animation {
-
-    0% {left:0px;}
-    10% {left:0px;}
-    20% {left:1349px;}
-    30% {left:1349px;}
-    40% {left:2698px;}
-    50% {left:2698px;}
-    60% {left:1349px;}
-    70% {left:1349px;}
-    80% {left:0px;}
-    90% {left:0px;}
-    100% {left:0px;}
-}
-
-.slide-images {
-    width: 4000px;
-    height: 800px;
-    margin: 0 0 0 -2698px;
-    position: relative;
-    -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 15s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
-
-}
-
-.image-container {
-    height: 800px;
-    width: 1200px;
-    position: relative; 
-    float: left;
-}
-
-.image-con {
-    position: relative;
-    top: -25px;
-    height: 800px;
-    width: 1200px;
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 50px;
+    height: 25px;
+    background-color: red;
+    padding: 10px 5px;
 }
 
 
@@ -145,7 +113,7 @@ nav {
     list-style: none;
     position: relative;
     right: 400px;
-    top: -70px;
+    top: -30px;
 }
 
 .diagram1 {
@@ -163,10 +131,10 @@ nav {
 
 .entire-footer {
     width: 100%;
-    height: 400px;
+    height: 450px;
     background-color: red;
     color: white;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .footer-container{
@@ -308,12 +276,17 @@ textarea {
 .footer-bottom {
     padding-top: 50px;
     padding-left: 74%;
-    font-weight: normal;
+    font-weight: inherit;
 }
 
 .bottom {
     text-decoration: none;
     color: white;
+}
+
+.bottom:hover {
+    color: white;
+    text-decoration-line: underline;
 }
 
 .line {
@@ -388,8 +361,7 @@ h3, .sub1{
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 50px 40px;
-    
+    padding: 10px 40px;  
 }
 
 .work-content {
@@ -404,6 +376,16 @@ h3, .sub1{
     color: red;
 }
 
+#messi {
+    position: relative;
+    top: 30px;
+}
+
+#messi-1 {
+    position: relative;
+    top: 20px;
+}
+
 .new-1 {
     width: 20%;
     border-width: 1px;
@@ -411,6 +393,7 @@ h3, .sub1{
     margin: 20px 0;
     position: relative;
     left: 450px; 
+    /* top: -20px; */
 }
 
 .new-2 {
@@ -433,9 +416,7 @@ h3, .sub1{
 
 .pix1 {
     width: 338px;
-    height: 235px;
-    position: relative;
-    top: -25px;
+    height: 200px;  
 }
 
 .progress {
@@ -444,13 +425,15 @@ h3, .sub1{
     border: 1px solid red;
     margin-left: 18px;
     position: relative;
-    top: -15px;
+    top: 10px;
     border-radius: 4px;
 }
 
 .ref {
     text-align: center;
-    padding-bottom: 10px;
+    padding: 0 5px;
+    position: relative;
+    top: 20px;
     
 }
 
@@ -469,6 +452,8 @@ h3, .sub1{
     text-align: justify;
     padding: 0 20px;
     color: red;
+    position: relative;
+    top: 20px;
 }
 
 .sub4:hover {
@@ -479,7 +464,7 @@ h3, .sub1{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 .read-btn a {
