@@ -69,6 +69,34 @@ nav {
     padding: 10px 5px;
 }
 
+.carousel-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    width: 80%;
+    height: 100px;
+}
+
+.carousel-caption {
+    margin: auto;
+    text-align: center;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    padding: 10px 30px;
+    color: red;
+    font-size: 20px;
+}
+
+.button:hover {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+}
+
 
 
 
@@ -131,7 +159,7 @@ nav {
 
 .entire-footer {
     width: 100%;
-    height: 450px;
+    height: 400px;
     background-color: red;
     color: white;
     padding-top: 40px;
@@ -206,7 +234,7 @@ nav {
 
 
 input[type="text"] {
-    width: 400px;
+    width: 100%;
     font-size: 1rem;
     padding: 10px 10px;
     outline: none;
@@ -216,7 +244,7 @@ input[type="text"] {
 
 
 input[type="email"] {
-    width: 400px;
+    width: 100%;
     font-size: 1rem;
     padding: 10px 10px;
     outline: none;
@@ -225,7 +253,7 @@ input[type="email"] {
 }
 
 textarea {
-    width: 400px;
+    width: 100%;
     height: 70px;
     font-size: 1rem;
     padding: 10px 10px;
@@ -239,7 +267,7 @@ textarea {
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    left: 25px;
+    left: 2px;
 }
 
 .footer-btn a {
@@ -274,7 +302,7 @@ textarea {
 /* THE FOOTER BOTTOM */
 
 .footer-bottom {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-left: 74%;
     font-weight: inherit;
 }
